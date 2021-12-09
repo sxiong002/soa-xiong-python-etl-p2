@@ -1,5 +1,7 @@
 import psycopg2
+import sql
 from config import pgsql_config
+
 
 def query(query, values=None):
     # Connect to your postgres DB
@@ -13,6 +15,7 @@ def query(query, values=None):
 
         # return query results
         return cursor.fetchall()
+
 
 def connect():
     connection = psycopg2.connect(f"""
