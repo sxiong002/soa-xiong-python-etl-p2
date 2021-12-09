@@ -80,35 +80,4 @@ if __name__ == '__main__':
             finalMovies.append(row['Awards'])
             finalMovies.append(row['Poster'])
             query(sql.insert_data, finalMovies)
-    #print(len(finalMovies))
-    #print(finalMovies)
 
-    # not_NA.append(row['Title'])
-    # print(len(not_NA))
-    # print(not_NA)
-    # print(row)
-    # dataset = []
-    # info = []
-    # dataset.append(row['Title'])
-    # dataset.append(row['Rated'])
-    # info = row['Released']
-    # dataset.append(datetime.strptime(info, "%d %b %Y"))
-    # print(dataset)
-    # info = row['Runtime']
-    # convert = info.strip('min')
-    # dataset.append(convert)
-    # dataset.append(row['Runtime'])
-    # dataset.append(row['Genre'])
-    # dataset.append(row['Director'])
-    # dataset.append(row['Writer'])
-    # dataset.append(list(row['Actors']))
-    # dataset.append(row['Plot'])
-    # dataset.append(row['Awards'])
-    # dataset.append(row['Poster'])
-    # query(sql.insert_data, dataset)
-    # print(dataset)
-
-    # titleList3 = json.dumps(titlelist2)
-    # movielist = json.load(titleList3)
-
-    # if dataset['Response'] != 'False' and 'English' in dataset['Language']:
